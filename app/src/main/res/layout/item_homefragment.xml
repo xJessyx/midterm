@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+    <data>
+
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/item_tv_articleTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/item_tv_authorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toLeftOf="@+id/item_tv_articleTitle"
+        app:layout_constraintTop_toBottomOf="@+id/item_tv_articleTitle" />
+
+    <TextView
+        android:id="@+id/item_tv_createdTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toLeftOf="@+id/item_tv_authorName"
+        app:layout_constraintTop_toBottomOf="@+id/item_tv_authorName" />
+
+    <TextView
+        android:id="@+id/item_tv_articleContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/item_tv_createdTime"
+        app:layout_constraintTop_toBottomOf="@+id/item_tv_createdTime" />
+
+    <TextView
+        android:id="@+id/item_tv_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/item_tv_authorName"
+        app:layout_constraintRight_toRightOf="@+id/item_tv_articleTitle"
+        app:layout_constraintTop_toTopOf="@+id/item_tv_authorName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
